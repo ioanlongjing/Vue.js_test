@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test vue.js</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet"  href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+	</head>
+
+	<body >
+		<div id="showDate">
+  			<span v-bind:title ="message">
+  				This is test for a few secound to see title!
+  			</span>
+		</div>
+
+		<script>
+			var app2 = new Vue
+			({
+				el: '#ShowDate',
+				data: 	
+				{
+					message: 'This is javascript load on... ' + new Date()
+				}
+			})
+		</script>
+	</body>
+</html>
