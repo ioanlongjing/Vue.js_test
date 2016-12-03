@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test vue.js</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet"  href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+	</head>
+
+	<body >
+		<div id="reverse">
+  			<p> {{ message }} </p>
+  			<button v-on:click="reverseMessage">Reverse Massage</button>
+		</div>
+
+		<script>
+			var app5 = new Vue
+			({
+				el: '#reverse',
+				data: 	
+				{
+					message : ' This is string.'
+				},
+
+				methods:
+				{
+					reverseMessage : function()
+					{
+						this.message = this.message.split('').reverse().join('')
+					}
+				}
+			})
+		</script>
+	</body>
+</html>
