@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test vue.js</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet"  href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+	</head>
+
+	<body >
+		<div id="forlist">
+  			<ol>
+  				<li v-for="todo in todos">
+  					{{ todo.text }}
+  				</li>
+  			</ol>
+		</div>
+
+		<script>
+			var app4= new Vue
+			({
+				el: '#forlist',
+				data: 	
+				{
+					todos : 
+					[
+						{ text: 'One line.' },
+						{ text: 'Two line.' },
+						{ text: 'Three line.'}
+					]
+				}
+			})
+		</script>
+	</body>
+</html>
